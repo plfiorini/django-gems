@@ -39,15 +39,14 @@
 import os, datetime
 from decimal import Decimal
 
-from django.conf import settings
 from django.core.serializers.json import DateTimeAwareJSONEncoder
 from django.db.models import Model
 from django.db.models import ImageField, FileField
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
-from django.template.loader import render_to_string
 from django.utils import simplejson as json
 from django.utils.functional import Promise
+from django.utils.encoding import force_unicode
 
 def json_encode(data):
 	"""
