@@ -1,15 +1,26 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: django-gems
 Version: 0.2.4
-Summary: Django utilities library
 Author: Pier Luigi Fiorini
-Author-email: pierluigi.fiorini@gmail.com
+Author-email: pierluigi fiorini at gmail com
+Maintainer: Pier Luigi Fiorini
+Maintainer-email: pierluigi fiorini at gmail com
+Home-page: http://plfiorini.github.com/django-gems
+Download-url: http://github.com/plfiorini/django-gems/tarball/master
+Summary: Django utilities library
 License: BSD
-Description: Django utilities library.
-Platform: Posix; MacOS X; Windows
+Description: Contents of this library:
+          * jqgrid integration with Django
+          * JSONResponseMixIn
+          * JSON encoding and decoding functions
+          * JSON view decorator
+          * Raw template tag that doesn't parse its content, useful for jQuery Template code which uses the same notation of Django templates
+          * Currency formatter for templates
+Keywords: django jqgrid json raw currency template
 Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
 Classifier: Intended Audience :: Developers
-Framework :: Django
 Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
 Classifier: Topic :: Internet
