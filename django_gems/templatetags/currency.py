@@ -34,8 +34,6 @@
 # Taken from
 #		http://djangosnippets.org/snippets/1825/
 #
-# $Id: currency.py 57 2011-08-08 09:31:35Z fiorini $
-#
 
 import locale
 

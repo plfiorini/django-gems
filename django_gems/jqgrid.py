@@ -32,8 +32,6 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 #
-# $Id: jqgrid.py 77 2011-08-19 16:03:39Z fiorini $
-#
 
 #
 # Here's a brief list of changes made by Pier Luigi Fiorini.

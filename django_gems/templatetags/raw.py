@@ -6,11 +6,9 @@
 #
 # Author: Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 #
+# Adapted from
+#	http://www.holovaty.com/writing/django-two-phased-rendering/
 #
-# $Id$
-#
-
-# http://www.holovaty.com/writing/django-two-phased-rendering/
 
 from django import template
 
