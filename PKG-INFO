@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: django-gems
-Version: 0.1
+Version: 0.2.4
 Summary: Django utilities library
 Author: Pier Luigi Fiorini
 Author-email: pierluigi.fiorini@gmail.com
@@ -9,6 +9,7 @@ Description: Django utilities library.
 Platform: Posix; MacOS X; Windows
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: BSD
+Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
 Classifier: Topic :: Internet

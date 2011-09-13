@@ -2,8 +2,8 @@
 
 from distutils.core import setup
 
-setup(name="Django Gems",
-	version="0.2.3",
+setup(name="django-gems",
+	version="0.2.4",
 	description="Django utilities library",
 	author="Pier Luigi Fiorini",
 	author_email="pierluigi.fiorini@gmail.com",
@@ -13,7 +13,8 @@ setup(name="Django Gems",
 	platforms="Posix; MacOS X; Windows",
 	classifiers=["Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Developers",
-		"License :: OSI Approved :: BSD",
+		"Framework :: Django",
+		"License :: OSI Approved :: BSD License",
 		"Operating System :: OS Independent",
 		"Topic :: Internet"],
 	)
