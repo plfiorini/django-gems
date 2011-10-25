@@ -1,6 +1,6 @@
 This work was packaged for Debian by:
 
-    Pier Luigi Fiorini <pierluigi.fiorini@yacme.com> on Fri, 20 May 2011 11:40:26 +0200
+    Pier Luigi Fiorini <pierluigi.fiorini@gmail.com> on Fri, 20 May 2011 11:40:26 +0200
 
 Upstream Author(s):
 
@@ -32,7 +32,7 @@ found in `/usr/share/common-licenses/BSD'.
 
 The Debian packaging is:
 
-    Copyright (C) 2011 Pier Luigi Fiorini <pierluigi.fiorini@yacme.com>
+    Copyright (C) 2011 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 
 and is licensed under the GPL version 3, 
 see `/usr/share/common-licenses/GPL-3'.

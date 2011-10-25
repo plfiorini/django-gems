@@ -1,7 +1,7 @@
 Source: django-gems
 Section: python
 Priority: optional
-Maintainer: Pier Luigi Fiorini <pierluigi.fiorini@yacme.com>
+Maintainer: Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 Build-Depends: cdbs (>= 0.4.49), debhelper (>= 7), python-all-dev (>= 2.6.5), python-support (>= 1.0.0)
 Standards-Version: 3.8.3
 
