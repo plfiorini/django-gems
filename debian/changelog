@@ -1,3 +1,9 @@
+django-gems (0.2.5-1ubuntu1) maverick; urgency=low
+
+  * Export and print management.
+
+ -- Pier Luigi Fiorini <plfiorini@ficaia>  Thu, 01 Dec 2011 17:00:54 +0100
+
 django-gems (0.2.5-1) unstable; urgency=low
 
   * Add JSONResponseMixin.
