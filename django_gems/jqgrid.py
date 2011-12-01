@@ -89,6 +89,19 @@ class JqGrid(object):
 			self.queryset = queryset
 		return self.queryset
 
+	def get_full_queryset(self, request):
+		if hasattr(self, "queryset") and self.queryset is not None:
+			queryset = self.queryset._clone()
+		elif hasattr(self, "model") and self.model is not None:
+			queryset = self.model.objects
+		else:
+			raise ImproperlyConfigured("No queryset or model defined.")
+		if self.distinct:
+			self.queryset = queryset.distinct()
+		else:
+			self.queryset = queryset
+		return self.queryset
+
 	def get_model(self):
 		if hasattr(self, "model") and self.model is not None:
 			model = self.model
@@ -108,9 +121,11 @@ class JqGrid(object):
 
 	def get_filters(self, request):
 		_search = request.GET.get("_search")
+		_export = request.GET.get("_export")
+		_print = request.GET.get("_print")
 		filters = None
 
-		if _search == "true":
+		if _search == "true" or _export == "true" or _print == "true":
 			_filters = request.GET.get("filters")
 			try:
 				filters = _filters and json.loads(_filters)
@@ -223,7 +238,8 @@ class JqGrid(object):
 
 	def get_data(self, request, as_json=True):
 		# Honor the start_empty setting
-		if self.start_empty and request.GET.get("_search", "false") == "false":
+		_search = request.GET.get("_search", "false")
+		if self.start_empty:
 			result = {
 				"page": 1,
 				"total": 1,
@@ -243,6 +259,12 @@ class JqGrid(object):
 			return json_encode(result)
 		return result
 
+	def get_results(self, request):
+		items = self.get_full_queryset(request)
+		items = self.filter_items(request, items)
+		items = self.sort_items(request, items)
+		return items
+
 	def get_json(self, request):
 		# Honor the start_empty setting
 		if self.start_empty and request.GET.get("_search", "false") == "false":
@@ -260,6 +282,13 @@ class JqGrid(object):
 			"rows": items,
 			"records": paginator.count
 		})
+
+	def get_html(self, request, template, context):
+		from django.template.response import TemplateResponse
+		items = self.get_results(request)
+		logger.debug(items)
+		context.update({"caption": self.caption, "items": items})
+		return TemplateResponse(request, template, context)
 
 	def get_default_config(self):
 		config = {
