@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name="django-gems",
-	version="0.2.8",
+	version="0.2.9",
 	description="Django utilities library",
 	long_description="""Contents of this library:
 		* jqgrid integration with Django
