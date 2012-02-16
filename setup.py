@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(name="django-gems",
 	version="0.2.9",
@@ -18,8 +18,7 @@ setup(name="django-gems",
 	maintainer_email="pierluigi.fiorini@gmail.com",
 	url="http://plfiorini.github.com/django-gems",
 	download_url="http://github.com/plfiorini/django-gems/tarball/master",
-	packages=["django_gems", "django_gems.utils", "django_gems.templatetags"],
-	package_dir={"django_gems": "django_gems"},
+	packages=find_packages(),
 	license="BSD",
 	classifiers=["Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Developers",
