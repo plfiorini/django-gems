@@ -1,3 +1,13 @@
+django-gems (0.2.3-1) unstable; urgency=low
+
+  * Added new stuff:
+    - A base64 template filter.
+    - Safe string formatting that could be used for translations.
+    - Excel support.
+    - Multiple querysets.
+
+ -- Pier Luigi Fiorini <pierluigi.fiorini@yacme.com>  Mon, 28 May 2012 17:48:29 +0200
+
 django-gems (0.2.9-3) unstable; urgency=low
 
   * Use setuptools.
