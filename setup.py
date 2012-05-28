@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(name="django-gems",
-	version="0.2.9",
+	version="0.3.0",
 	description="Django utilities library",
 	long_description="""Contents of this library:
 		* jqgrid integration with Django
