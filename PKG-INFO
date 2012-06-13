@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: django-gems
-Version: 0.2.4
+Version: 0.3.0
 Author: Pier Luigi Fiorini
 Author-email: pierluigi fiorini at gmail com
 Maintainer: Pier Luigi Fiorini
@@ -14,8 +14,11 @@ Description: Contents of this library:
           * JSONResponseMixIn
           * JSON encoding and decoding functions
           * JSON view decorator
+          * Excel view decorator
           * Raw template tag that doesn't parse its content, useful for jQuery Template code which uses the same notation of Django templates
           * Currency formatter for templates
+          * Multiple querysets
+          * Safe string formatting for templates (useful for translations)
 Keywords: django jqgrid json raw currency template
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Environment :: Web Environment

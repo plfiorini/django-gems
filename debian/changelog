@@ -1,3 +1,9 @@
+django-gems (0.3.0-1) unstable; urgency=low
+
+  * Bump version.
+
+ -- Pier Luigi Fiorini <pierluigi.fiorini@yacme.com>  Wed, 13 Jun 2012 11:43:07 +0200
+
 django-gems (0.2.3-1) unstable; urgency=low
 
   * Added new stuff:

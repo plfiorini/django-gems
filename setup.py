@@ -10,8 +10,11 @@ setup(name="django-gems",
 		* JSONResponseMixIn
 		* JSON encoding and decoding functions
 		* JSON view decorator
+		* Excel view decorator
 		* Raw template tag that doesn't parse its content, useful for jQuery Template code which uses the same notation of Django templates
-		* Currency formatter for templates""",
+		* Currency formatter for templates
+		* Multiple querysets
+		* Safe string formatting for templates (useful for translations)""",
 	author="Pier Luigi Fiorini",
 	author_email="pierluigi.fiorini@gmail.com",
 	maintainer="Pier Luigi Fiorini",
