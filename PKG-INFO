@@ -21,7 +21,6 @@ Description: Contents of this library:
           * Safe string formatting for templates (useful for translations)
 Keywords: django jqgrid json raw currency template
 Classifier: Development Status :: 5 - Production/Stable
-Classifier: Environment :: Web Environment
 Classifier: Framework :: Django
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: BSD License
