@@ -33,6 +33,11 @@
 # POSSIBILITY OF SUCH DAMAGE.
 #
 
+#
+# From here:
+#   http://stackoverflow.com/questions/9136131/django-localization-how-to-make-po-file-without-html
+#
+
 from django import template
 
 register = template.Library()
