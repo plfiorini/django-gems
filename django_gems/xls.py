@@ -48,6 +48,8 @@ def xls_convert(array):
 	]
 	"""
 	import xlwt
+	import types
+	import datetime
 
 	wb = xlwt.Workbook()
 	ws = wb.add_sheet("Foglio")
@@ -55,7 +57,16 @@ def xls_convert(array):
 	row_count = 0
 	for row in array:
 		for col in range(len(row)):
-			ws.write(row_count, col, row[col])
+			if type(row[col]) == datetime.datetime:
+				style = xlwt.XFStyle()
+				style.num_format_str = "D/M/YYYY hh:mm:ss"
+				ws.write(row_count, col, row[col].strftime("%d/%m/%Y %H:%M:%S"), style)
+			elif type(row[col]) == datetime.date:
+				style = xlwt.XFStyle()
+				style.num_format_str = "D/M/YYYY"
+				ws.write(row_count, col, row[col].strftime("%d/%m/%Y"), style)
+			else:
+				ws.write(row_count, col, row[col])
 		row_count += 1
 
 	buffer = StringIO()
