@@ -1,3 +1,9 @@
+django-gems (0.4.0-1) unstable; urgency=medium
+
+  * Bump version.
+
+ -- Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>  Wed, 03 Dec 2014 12:09:11 +0100
+
 django-gems (0.3.0-1) unstable; urgency=low
 
   * Bump version.
