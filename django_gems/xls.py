@@ -51,18 +51,17 @@ def xls_convert(array):
 	import types
 	import datetime
 
-	wb = xlwt.Workbook()
+	wb = xlwt.Workbook(style_compression=2)
 	ws = wb.add_sheet("Foglio")
 
 	row_count = 0
+	style = xlwt.XFStyle()
 	for row in array:
 		for col in range(len(row)):
 			if type(row[col]) == datetime.datetime:
-				style = xlwt.XFStyle()
 				style.num_format_str = "D/M/YYYY hh:mm:ss"
 				ws.write(row_count, col, row[col].strftime("%d/%m/%Y %H:%M:%S"), style)
 			elif type(row[col]) == datetime.date:
-				style = xlwt.XFStyle()
 				style.num_format_str = "D/M/YYYY"
 				ws.write(row_count, col, row[col].strftime("%d/%m/%Y"), style)
 			else:
