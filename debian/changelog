@@ -1,3 +1,9 @@
+django-gems (0.4.1-1) unstable; urgency=medium
+
+  * Style size limit fix in Excel files.
+
+ -- Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>  Fri, 19 Dec 2014 12:52:04 +0100
+
 django-gems (0.4.0-1) unstable; urgency=medium
 
   * Bump version.
