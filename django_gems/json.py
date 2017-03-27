@@ -36,7 +36,7 @@
 #		http://code.google.com/p/dojango/source/browse/trunk/dojango/util/__init__.py
 #
 
-import os, datetime
+import os, datetime, json
 from decimal import Decimal
 
 from django.core.serializers.json import DateTimeAwareJSONEncoder
@@ -44,7 +44,6 @@ from django.db.models import Model
 from django.db.models import ImageField, FileField
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
-from django.utils import simplejson as json
 from django.utils.functional import Promise
 from django.utils.encoding import force_unicode
 
